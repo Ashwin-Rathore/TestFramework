@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Framework Test">
+<listeners>
+<listener class-name="com.crm.extentReportListener.ExtentReportListenerNG"></listener>
+</listeners>
+
+	<test name="FrameWork">
+		<classes>
+			<class name="com.crm.qa.testCases.CreateNewConatctPageTest" />
+			<class name="com.crm.qa.testCases.LoginPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

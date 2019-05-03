@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Framework Test]">
+  <listeners>
+    <listener class-name="com.crm.extentReportListener.ExtentReportListenerNG"/>
+  </listeners>
+  <test thread-count="5" name="FrameWork(failed)">
+    <classes>
+      <class name="com.crm.qa.testCases.CreateNewConatctPageTest">
+        <methods>
+          <include name="loginPageTitle"/>
+          <include name="loginTest"/>
+          <include name="createNewContactTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testCases.CreateNewConatctPageTest -->
+      <class name="com.crm.qa.testCases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitle"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- FrameWork(failed) -->
+</suite> <!-- Failed suite [Framework Test] -->
